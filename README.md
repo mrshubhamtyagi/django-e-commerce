@@ -9,4 +9,4 @@ This is a practice project for Django ORM
 > python3 -m venv .venv
 
 ### Use this cmd to activate it
-> source <oath_to_venv_folder>/bin.activate
+> source <path_to_venv_folder>/bin.activate
