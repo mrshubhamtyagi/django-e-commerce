@@ -1,4 +1,4 @@
-# django-orm
+# django-e-commerce
 This is a practice project for Django ORM
 1. Create a virtual environment
 2. Activate it
