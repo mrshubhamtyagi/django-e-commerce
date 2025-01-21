@@ -1,0 +1,7 @@
+Django
+djangorestframework
+django-crispy-forms
+Pillow
+django-allauth
+django-extensions
+django-debug-toolbar
