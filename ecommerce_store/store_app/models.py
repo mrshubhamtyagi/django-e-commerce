@@ -52,8 +52,8 @@ class CartModel(models.Model):
     def __str__(self):
         product_name = self.product.name
         quality = f'x{self.quantity}'
-        user_name = self.user.name if self.user else 'User Unknown'
-        return f"{product_name} ({quality}) for {user_name}"
+        user_name = self.user.username if self.user else "User Unknown"
+        return f"{product_name} ({quality}) | {user_name}"
 
     @property
     def total_price(self):
