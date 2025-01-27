@@ -1,4 +1,4 @@
-from django.forms import model_to_dict
+from django.http import JsonResponse
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
@@ -9,7 +9,7 @@ class CategoryList(APIView):
     def get(self, request):
         categories = CategoryModel.objects.all()
         serializer = CategorySerializer(categories, many=True)
-        return Response(serializer.data)
+        return JsonResponse({'data':serializer.data}, safe=False)
 
 
     def post(self, request):
